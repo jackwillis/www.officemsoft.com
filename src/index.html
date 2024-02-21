@@ -31,90 +31,95 @@
     </script>
   </head>
   <body class="container">
-    <h1>Office MSoft</h1>
-    <button
-      class="btn btn-primary block my-2"
-      onmouseover="this.textContent = 'undefined';"
-      onclick="this.hidden = true;"
-    >
-      Download!
-    </button>
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+      <h1>Office MSoft</h1>
+      <button
+        class="btn btn-primary block my-2"
+        onmouseover="this.textContent = 'undefined';"
+        onclick="this.hidden = true;"
+      >
+        Download!
+      </button>
 
-    <p>
-      <img
-        src="images/office-msoft-product-box.jpg"
-        alt="Office MSoft product box"
-        height="600"
-        width="600"
-        class="img-fluid"
-      />
-    </p>
+      <p>
+        <img
+          src="images/office-msoft-product-box.jpg"
+          alt="Office MSoft product box"
+          height="600"
+          width="600"
+          class="img-fluid"
+        />
+      </p>
 
-    <div
-      id="warningModal"
-      class="modal"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Notice of Data Transfer</h5>
+      <div
+        id="warningModal"
+        class="modal"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Notice of Data Transfer</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                By viewing this website, you have consented to having your name,
+                age, location, occupation, credit card numbers, sexual
+                orientation, insurance and banking information sent to the
+                following parties:
+              </p>
+              <ul>
+                <li>Democratic People's Republic of Korea</li>
+                <li>Microsoft Corporation</li>
+                <li>People's Republic of China</li>
+                <li>Russian Federation</li>
+                <li>Bureau of Land Management</li>
+                <li>Olive Garden</li>
+              </ul>
+              <p>Thank you for your cooperation.</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                I Agree Wholeheartedly
+              </button>
+            </div>
           </div>
-          <div class="modal-body">
-            <p>
-              By viewing this website, you have consented to having your name,
-              age, location, occupation, credit card numbers, sexual
-              orientation, insurance and banking information sent to the
-              following parties:
-            </p>
-            <ul>
-              <li>Democratic People's Republic of Korea</li>
-              <li>Microsoft Corporation</li>
-              <li>People's Republic of China</li>
-              <li>Russian Federation</li>
-              <li>Bureau of Land Management</li>
-              <li>Olive Garden</li>
-            </ul>
-            <p>Thank you for your cooperation.</p>
-          </div>
-          <div class="modal-footer">
+        </div>
+      </div>
+
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div
+          id="myToast"
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true"
+        >
+          <div class="toast-header">
+            <strong class="me-auto">
+              🇰🇵&nbsp; North Korean Data Transfer In Progress
+            </strong>
             <button
               type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-            >
-              I Agree Wholeheartedly
-            </button>
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="toast-body">
+            Thank you for your cooperation. Your data is being transferred to
+            Microsoft Corporation and the Democratic People's Republic of Korea.
           </div>
         </div>
       </div>
+      
     </div>
-
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div
-        id="myToast"
-        class="toast"
-        role="alert"
-        aria-live="assertive"
-        aria-atomic="true"
-      >
-        <div class="toast-header">
-          <strong class="me-auto">
-            🇰🇵&nbsp; North Korean Data Transfer In Progress
-          </strong>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="toast"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="toast-body">
-          Thank you for your cooperation. Your data is being transferred to
-          Microsoft Corporation and the Democratic People's Republic of Korea.
-        </div>
-      </div>
     </div>
   </body>
 </html>
