@@ -35,7 +35,7 @@
       }
     </script>
   </head>
-  <body class="container">
+  <body class="container p-2 p-md-4">
     <div class="row">
       <div class="col-md-8 offset-md-2">
         <h1 class="mb-3">Office MSoft</h1>
@@ -45,10 +45,23 @@
         <button
           class="btn btn-primary block mb-3"
           onmouseover="this.textContent = 'undefined';"
-          onclick="this.hidden = true;"
-        >
+          onclick="document.body.hidden = true;"
+        > 
           Get Started for Free!
         </button>
+
+        <figure>
+          <blockquote class="blockquote">
+            <p>
+              <b>Office MSoft</b> is the best computer program I've ever used.
+              It's the only one that lets you store your backups on North Korean servers.
+              I feel assured knowing that the world's best governments and corporations are safeguarding my data.
+            </p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Bob, Satisfied Customer
+          </figcaption>
+        </figure>
 
         <p class="my-3">
           <img
@@ -59,6 +72,18 @@
             class="img-fluid"
           />
         </p>
+
+        <h2 class="display-6 mb-3">
+          Data Collection Partners
+        </h2>
+        <ul>
+          <li>Democratic People's Republic of Korea</li>
+          <li>Microsoft Corporation</li>
+          <li>People's Republic of China</li>
+          <li>Russian Federation</li>
+          <li>Bureau of Land Management</li>
+          <li>Olive Garden</li>
+        </ul>
 
         <div
           id="warningModal"
@@ -73,9 +98,9 @@
               </div>
               <div class="modal-body">
                 <p>
-                  By viewing this website, you have consented to having your
+                  By viewing this website, you have given us consent to send your
                   name, age, location, occupation, credit card numbers, sexual
-                  orientation, insurance and banking information sent to the
+                  orientation, insurance and banking information to the
                   following parties:
                 </p>
                 <ul>
