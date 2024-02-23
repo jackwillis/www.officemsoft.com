@@ -5,11 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Office MSoft</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+    />
+    <style>
+      :root {
+        --bs-font-sans-serif: Silkscreen, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          sans-serif;
+      }
+    </style>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -38,24 +51,27 @@
   <body class="container p-2 p-md-4">
     <div class="row">
       <div class="col-md-8 offset-md-2">
-        <h1 class="mb-3">Office MSoft</h1>
-        <h2 class="display-6 fst-italic mb-4">
-          The world's best office suite that also transfers your data to the
-          world's best governments
-        </h2>
-        <button
-          class="btn btn-primary block mb-4"
-          onmouseover="
-            this.textContent = 'Sorry, Office MSoft Is Not Available In Your Region';
-            this.disabled = true;
-          "
-        >
-          Get Started for Free!
-        </button>
+        <h1 class="mb-3 fw-bold">Office MSoft</h1>
+
+        <div class="card p-2 p-md-4 mb-4">
+          <h2 class="display-6 mb-4 font-monospace">
+            The world's best word processor that also transfers your data to the
+            world's best governments
+          </h2>
+          <button
+            class="btn btn-primary block"
+            onmouseover="
+              this.textContent = 'Sorry, Office MSoft Is Not Available In Your Region';
+              this.disabled = true;
+            "
+          >
+            Get Started for Free!
+          </button>
+        </div>
 
         <figure class="mb-4">
           <blockquote class="blockquote">
-            <p>
+            <p class="font-monospace">
               <b>Office MSoft</b> is the best computer program I've ever used.
               It's the only cloud service that lets you store backups on North
               Korean servers. I rest assured knowing that the world's best
@@ -77,15 +93,22 @@
           />
         </p>
 
-        <h2 class="display-6 mb-3">Data Collection Partners</h2>
-        <ul>
+        <h2 class="mt-5">Data Collection Partners</h2>
+        <ul class="mb-5 font-monospace">
           <li>Democratic People's Republic of Korea</li>
-          <li>Microsoft Corporation</li>
           <li>People's Republic of China</li>
           <li>Russian Federation</li>
           <li>Bureau of Land Management</li>
           <li>Olive Garden</li>
         </ul>
+
+        <footer class="border-top mt-5 mb-3">
+          <p class="text-secondary">
+            <small>
+              Office MSoft is a parody website and is not affiliated with Microsoft.
+            </small>
+          </p>
+        </footer>
 
         <div
           id="warningModal"
@@ -96,29 +119,32 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Notice of Data Transfer</h5>
+                <h2 class="modal-title h4 fw-bold">
+                  ⚠️‼️ Notice of Data Transfer ‼️⚠️
+                </h2>
               </div>
-              <div class="modal-body">
+              <div class="modal-body font-monospace">
                 <p>
-                  By viewing this website, you have given us consent to send
-                  your name, age, location, occupation, credit card numbers,
-                  sexual orientation, insurance and banking information to the
-                  following parties:
+                  By visiting this website, you have "legally" given us consent
+                  to send your name, age, location, occupation, credit card
+                  numbers, SSN, sexual orientation, phone number, insurance and
+                  banking information to the following parties:
                 </p>
                 <ul>
-                  <li>Democratic People's Republic of Korea</li>
-                  <li>Microsoft Corporation</li>
-                  <li>People's Republic of China</li>
-                  <li>Russian Federation</li>
-                  <li>Bureau of Land Management</li>
-                  <li>Olive Garden</li>
+                  <li>Bill and Melinda Gates Foundation 💉</li>
+                  <li>Democratic People's Republic of Korea 🇰🇵</li>
+                  <li>People's Republic of China 🇰🇵</li>
+                  <li>Russian Federation 🇷🇺</li>
+                  <li>Bureau of Land Management 🇺🇸🚜</li>
+                  <li>Olive Garden 🍝🧑‍🍳</li>
                 </ul>
-                <p>Thank you for your cooperation.</p>
+                <p>🐄 Thank you for your cowoperation. 🐄</p>
               </div>
               <div class="modal-footer">
+                ❤️
                 <button
                   type="button"
-                  class="btn btn-primary"
+                  class="btn btn-primary ms-2"
                   data-bs-dismiss="modal"
                 >
                   I Agree Wholeheartedly
@@ -147,7 +173,7 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="toast-body">
+            <div class="toast-body font-monospace">
               Your data is being transferred to the Democratic People's Republic
               of Korea. Thank you for your cooperation.
             </div>
@@ -161,7 +187,7 @@
           >
             <div class="toast-header">
               <strong class="me-auto">
-                ✔️&nbsp; Microsoft Data Transfer In Progress
+                ✔️&nbsp; Bill and Melinda Gates Data Transfer In Progress
               </strong>
               <button
                 type="button"
@@ -170,9 +196,9 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="toast-body">
-              Your data is being transferred to the Microsoft Corporation. Thank
-              you for your cooperation.
+            <div class="toast-body font-monospace">
+              Your data is being transferred to the Bill and Melinda Gates
+              Foundation. Thank you for your cooperation.
             </div>
           </div>
           <div
@@ -193,7 +219,7 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div class="toast-body">
+            <div class="toast-body font-monospace">
               Your data is being transferred to the People's Republic of China.
               Thank you for your cooperation.
             </div>
