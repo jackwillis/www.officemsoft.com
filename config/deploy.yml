@@ -1,0 +1,20 @@
+service: web-www-officemsoft-com
+image: jackwillis/www.officemsoft.com
+
+servers:
+  - 1337.attac.us
+
+proxy:
+  ssl: true
+  host: 1337.attac.us
+
+ssh:
+  user: george
+
+builder:
+  arch: amd64
+
+registry:
+  server: ghcr.io
+  username: <%= ENV['KAMAL_REGISTRY_USER'] %>
+  password: <%= ENV['KAMAL_REGISTRY_PASSWORD'] %>
