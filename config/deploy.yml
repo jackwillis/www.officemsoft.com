@@ -6,7 +6,9 @@ servers:
 
 proxy:
   ssl: true
-  host: 1337.attac.us
+  host:
+    - www.officemsoft.com
+    - officemsoft.com
 
 ssh:
   user: george
@@ -16,5 +18,5 @@ builder:
 
 registry:
   server: ghcr.io
-  username: <%= ENV['KAMAL_REGISTRY_USER'] %>
+  username: jackwillis
   password: <%= ENV['KAMAL_REGISTRY_PASSWORD'] %>
